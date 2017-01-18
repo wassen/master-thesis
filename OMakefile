@@ -1,12 +1,12 @@
 LATEX           = platex
 TETEX2_ENABLED  = false
-LATEXFLAGS      = -interaction=nonstopmode 
-#BIBTEX         = jbibtex
+LATEXFLAGS      = -interaction=nonstopmode
+BIBTEX         = pbibtex
 DVIPDFM         = dvipdfmx
 DVIPDFMFLAGS    = -p a4
 DOCUMENT_TITLE	= mthesis
 
-TEX_FILES = $(glob *tex */*.tex)
+TEX_FILES = $(glob *tex */*.tex */*/*.tex)
 TEXDEPS  = $(TEX_FILES)
 
 LaTeXDocument($(DOCUMENT_TITLE), $(DOCUMENT_TITLE))

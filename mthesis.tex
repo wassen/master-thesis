@@ -1,17 +1,17 @@
-% \documentclass[a4paper,report,12pt]{jsbook}
-\documentclass[a4paper,report,12pt,draft]{jsbook} % テスト用。コンパイルが早い
+\documentclass[a4paper,report,12pt]{jsbook}
+% \documentclass[a4paper,report,12pt,draft]{jsbook} % テスト用．コンパイルが早い
+\bibliographystyle{junsrt}
 
 \input{tex/personal_setting}
 \input{tex/setting}
-
+\include{tex/newcommand}
 \begin{document}
-
 \include{tex/class_setting/titlepage}
 \include{tex/cmember}
 \pagenumbering{roman}
 \include{tex/class_setting/jabstract}
 \include{tex/class_setting/eabstract}
-
+j
 \tableofcontents
 \listoffigures
 \clearpage
@@ -22,8 +22,12 @@
 \include{tex/chap2}
 \include{tex/chap3}
 \include{tex/chap4}
+\include{tex/chap5}
 \include{tex/con_ack}
 
-\input{tex/reference}
+
+
+% \input{tex/reference}
+\bibliography{reference.bib}
 
 \end{document}
