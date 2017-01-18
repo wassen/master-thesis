@@ -43,7 +43,7 @@
 \\
 また，0.5秒ごとに散布図をつなげると，データ点が回転しながら収束していくように見ることができた．この情報を特徴として持たせるために特徴量の時間差分が必要だと考え，0.5秒前のデータも特徴として盛り込み，以下に表されるような4次元の特徴とした．
 \begin{align}
-  feature_t(n)=\{distance_{t(n)}^{rel},velocity_{t(n)}^{rel},distance_{t(n+1)}^{rel},velocity_{t(n+1)}^{rel}\}
+  feature_t(n)=\{\dist_{t(n)}^{rel},\vel_{t(n)}^{rel},\dist_{t(n+1)}^{rel},\vel_{t(n+1)}^{rel}\}
 \end{align}
 ここで，nを1から20までの整数とすると時刻$t(n)$は$t(n) = n/2$と表される．
 \subsection{主成分分析}

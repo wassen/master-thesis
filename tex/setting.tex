@@ -84,15 +84,17 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\def\thebibliography#1{\chapter*{参考文献\markboth
- {参 考 文 献}{参 考 文 献}\addcontentsline{toc}{chapter}{参考文献}}\list
- {[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}\leftmargin\labelwidth
- \advance\leftmargin\labelsep
- \usecounter{enumi}}
- \def\newblock{\hskip .11trueem plus .33trueem minus -.07trueem}
- \sloppy
- \sfcode`\.=1000\relax}
-\let\endthebibliography=\endlist
+% これ消すと小さいな
+% \def\thebibliography#1{\chapter*{参考文献\markboth
+%  {参 考 文 献}{参 考 文 献}\addcontentsline{toc}{chapter}{参考文献}}\list
+%  {[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}\leftmargin\labelwidth
+%  \advance\leftmargin\labelsep
+%  \usecounter{enumi}}
+%  \def\newblock{\hskip .11trueem plus .33trueem minus -.07trueem}
+%  \sloppy
+%  \sfcode`\.=1000\relax}
+% \let\endthebibliography=\endlist
+
 
 %chapterのフォントサイズ変更
 \makeatletter%%
