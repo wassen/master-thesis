@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 #$latex = 'platex -guess-input-enc -src-specials -interaction=nonstopmode -synctex=1';
-$latex = 'platex -synctex=1';
+$latex = 'platex -synctex=1 -interaction=nonstopmode';
 # $latex_silent = 'platex -interaction=batchmode';
 # $dvips = 'dvips';
 $bibtex = 'pbibtex';
