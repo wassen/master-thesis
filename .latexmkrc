@@ -4,7 +4,6 @@ $latex = 'platex -synctex=1 -interaction=nonstopmode';
 # $latex_silent = 'platex -interaction=batchmode';
 # $dvips = 'dvips';
 $bibtex = 'pbibtex';
-# $dvi_previewer = 'start dviout'; # -pv option
 $dvipdf = 'dvipdfmx %O -o %D %S';
 $makeindex = 'mendex %O -o %D %S';
 $pdf_previewer = 'atom';
